@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berita - RA AISYIYAH</title>
+  <link rel="icon" type="image/jpeg" href="gambar/logo.jpeg">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body class="berita-page">
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+  <div class="container-fluid">  
+    <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+      <img src="gambar/logo.jpeg" alt="Logo" class="ms-3"> <!-- FIX -->
+      <div><div class="school-name d-block">RA AISYIYAH</div><div class="school-address d-block">Cengkeh Turi, Binjai Utara</div></div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto">       
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa-solid fa-house me-1"></i> Beranda</a></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-circle-info me-1"></i> Profil</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="sejarah.html">Sejarah</a></li><li><a class="dropdown-item" href="visimisitujuan.html">Visi, Misi & Tujuan</a></li><li><a class="dropdown-item" href="fasilitas.html">Fasilitas</a></li></ul></li>
+        <li class="nav-item"><a class="nav-link" href="guru.html"><i class="fa-solid fa-chalkboard-user me-1"></i> Guru</a></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-calendar-days me-1"></i> Kegiatan</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="kegiatan.html#ekskul">Ekstrakurikuler</a></li><li><a class="dropdown-item" href="kegiatan.html#lomba">Lomba</a></li></ul></li>
+        <li class="nav-item"><a class="nav-link active" href="berita.html"><i class="fa-solid fa-newspaper me-1"></i> Berita</a></li>
+        <li class="nav-item"><a class="nav-link" href="galeri.html"><i class="fa-solid fa-images me-1"></i> Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontak.html"><i class="fa-solid fa-envelope me-1"></i> Kontak</a></li>     
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="section-padding berita-bg">
+  <div class="container">
+    <h2 class="section-title">Berita</h2>
+    <div class="row g-4">
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="berita-card">
+          <div class="berita-img-wrapper">
+            <img src="gambar/beritawisuda.jpeg" alt="Wisuda Akbar" class="berita-img">
+          </div>
+          <div class="berita-body">
+            <p class="berita-tanggal">Juni 2026</p>
+            <h3 class="berita-title">Wisuda Akbar & Pelepasan Siswa 2025/2026</h3>
+            <p class="berita-text">Suasana haru dan bangga menyelimuti acara Wisuda Akbar RA Aisyiyah...</p>
+            <button type="button" class="btn-selengkapnya" data-bs-toggle="modal" data-bs-target="#modal1">
+              Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="berita-card">
+          <div class="berita-img-wrapper">
+            <img src="gambar/beritagernasratik.jpeg" alt="Gernasbatik" class="berita-img">
+          </div>
+          <div class="berita-body">
+            <p class="berita-tanggal">02 Oktober 2025</p>
+            <h3 class="berita-title">Gernasbatik PD IGRA Kota Binjai</h3>
+            <p class="berita-text">RA Aisyiyah turut memeriahkan Gerakan Nasional RA Membatik...</p>
+            <button type="button" class="btn-selengkapnya" data-bs-toggle="modal" data-bs-target="#modal2">
+              Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="berita-card">
+          <div class="berita-img-wrapper">
+            <img src="gambar/beritasosial.jpeg" alt="E-Ijazah" class="berita-img">
+          </div>
+          <div class="berita-body">
+            <p class="berita-tanggal">27 Mei 2025</p>
+            <h3 class="berita-title">Sosialisasi E-Ijazah Kemenag</h3>
+            <p class="berita-text">Menyambut Bapak Kakan Kemenag Kota Binjai dalam acara Sosialisasi...</p>
+            <button type="button" class="btn-selengkapnya" data-bs-toggle="modal" data-bs-target="#modal3">
+              Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="berita-card">
+          <div class="berita-img-wrapper">
+            <img src="gambar/beritaout.jpeg" alt="Outing" class="berita-img">
+          </div>
+          <div class="berita-body">
+            <p class="berita-tanggal">2025</p>
+            <h3 class="berita-title">Outing Class Medan Zoo</h3>
+            <p class="berita-text">Belajar tidak hanya di kelas. Ananda senang sekali saat outing class...</p>
+            <button type="button" class="btn-selengkapnya" data-bs-toggle="modal" data-bs-target="#modal4">
+              Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="berita-card">
+          <div class="berita-img-wrapper">
+            <img src="gambar/beritahut.jpeg" alt="HUT RI" class="berita-img">
+          </div>
+          <div class="berita-body">
+            <p class="berita-tanggal">15 Agustus 2024</p>
+            <h3 class="berita-title">Perayaan HUT RI ke-79</h3>
+            <p class="berita-text">Semangat kemerdekaan! RA Aisyiyah merayakan HUT RI ke-79...</p>
+            <button type="button" class="btn-selengkapnya" data-bs-toggle="modal" data-bs-target="#modal5">
+              Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="berita-card">
+          <div class="berita-img-wrapper">
+            <img src="gambar/beritamanasik.jpeg" alt="Manasik" class="berita-img">
+          </div>
+          <div class="berita-body">
+            <p class="berita-tanggal">2024</p>
+            <h3 class="berita-title">Manasik Haji RA Se-Kota Binjai</h3>
+            <p class="berita-text">Ananda mengikuti simulasi manasik haji bersama RA se-Kota Binjai...</p>
+            <button type="button" class="btn-selengkapnya" data-bs-toggle="modal" data-bs-target="#modal6">
+              Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="berita-card">
+          <div class="berita-img-wrapper">
+            <img src="gambar/beritaperpus.jpeg" alt="Perpustakaan" class="berita-img">
+          </div>
+          <div class="berita-body">
+            <p class="berita-tanggal">2024</p>
+            <h3 class="berita-title">Kunjungan Perpustakaan Kota Binjai</h3>
+            <p class="berita-text">Menumbuhkan minat baca sejak dini. Ananda berkunjung ke Perpustakaan...</p>
+            <button type="button" class="btn-selengkapnya" data-bs-toggle="modal" data-bs-target="#modal7">
+              Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="berita-card">
+          <div class="berita-img-wrapper">
+            <img src="gambar/beritamahasiswa.jpeg" alt="Mahasiswa" class="berita-img">
+          </div>
+          <div class="berita-body">
+            <p class="berita-tanggal">2026</p>
+            <h3 class="berita-title">Mahasiswa ITB Indonesia kampus Tandem Buat Website RA</h3>
+            <p class="berita-text">Mahasiswa ITB Indonesia kampus Tandem izin membuat website RA Aisyiyah sebagai...</p>
+            <button type="button" class="btn-selengkapnya" data-bs-toggle="modal" data-bs-target="#modal8">
+              Baca Selengkapnya <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Wisuda Akbar & Pelepasan Siswa 2025/2026</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="gambar/beritawisuda.jpeg" alt="Wisuda Akbar">
+        <p>RA Aisyiyah Cengkeh Turi menggelar acara Wisuda Akbar dan Pelepasan Siswa Tahun Ajaran 2025/2026 dengan penuh khidmat dan kebahagiaan. Acara yang dihadiri oleh seluruh orang tua wali murid, dewan guru, dan tamu undangan ini menjadi momen haru bagi ananda yang akan melanjutkan ke jenjang Sekolah Dasar. Kepala Sekolah dalam sambutannya menyampaikan rasa bangga atas pencapaian ananda selama 2 tahun belajar di RA. Diharapkan ilmu dan akhlak yang didapat dapat menjadi bekal terbaik di masa depan. Selamat menempuh jenjang selanjutnya ananda sholeh dan sholehah.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Gernasbatik PD IGRA Kota Binjai</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="gambar/beritagernasratik.jpeg" alt="Gernasbatik">
+        <p>Pada tanggal 02 Oktober 2025, RA Aisyiyah turut serta dalam kegiatan Gerakan Nasional RA Membatik yang diselenggarakan oleh PD IGRA Kota Binjai. Melalui kegiatan membatik, kami berupaya menumbuhkan kecintaan anak sejak usia dini terhadap budaya Indonesia. Ananda terlihat sangat antusias mencoba membatik di atas kain. Kegiatan ini tidak hanya melatih motorik halus, tetapi juga menanamkan nilai cinta tanah air dan warisan leluhur.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Sosialisasi E-Ijazah Kemenag</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="gambar/beritasosial.jpeg" alt="E-Ijazah">
+        <p>RA Aisyiyah berkesempatan menyambut Bapak Kepala Kantor Kementerian Agama Kota Binjai dalam acara Sosialisasi E-Ijazah bagi Kepala RA se-Kota Binjai yang dilaksanakan pada 27 Mei 2025. Sosialisasi ini bertujuan untuk meningkatkan tertib administrasi dan digitalisasi dokumen kelulusan siswa RA. Kami berkomitmen untuk terus mengikuti perkembangan teknologi demi pelayanan yang lebih baik.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal4" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Outing Class Medan Zoo</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="gambar/beritaout.jpeg" alt="Outing Class">
+        <p>Belajar tidak hanya terbatas di dalam kelas. Ananda RA Aisyiyah mengikuti kegiatan Outing Class ke Medan Zoo. Dengan didampingi guru, anak-anak belajar mengenal berbagai jenis satwa, habitatnya, dan cara merawat hewan dengan baik. Kegiatan ini sangat menyenangkan dan menambah wawasan ananda tentang alam semesta ciptaan Allah SWT.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal5" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Perayaan HUT RI ke-79</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="gambar/beritahut.jpeg" alt="HUT RI">
+        <p>Dalam rangka memperingati HUT RI ke-79 pada 15 Agustus 2024, RA Aisyiyah mengadakan berbagai perlombaan seru dan edukatif untuk ananda. Mulai dari lomba makan kerupuk, balap karung, hingga fashion show bernuansa merah putih. Kegiatan ini bertujuan untuk menanamkan semangat nasionalisme dan kebersamaan sejak usia dini.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal6" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Manasik Haji RA Se-Kota Binjai</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="gambar/beritamanasik.jpeg" alt="Manasik Haji">
+        <p>RA Aisyiyah bersama RA se-Kota Binjai melaksanakan kegiatan Manasik Haji 2024. Ananda diperkenalkan dengan tata cara ibadah haji melalui simulasi yang menyenangkan dan mudah dipahami anak usia dini. Mulai dari memakai pakaian ihram, tawaf, sa'i, hingga melempar jumrah mini. Semoga menjadi bekal spiritual yang baik untuk ananda.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal7" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Kunjungan Perpustakaan Kota Binjai</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="gambar/beritaperpus.jpeg" alt="Perpustakaan">
+        <p>Untuk menumbuhkan minat baca sejak dini, ananda RA Aisyiyah mengunjungi Perpustakaan Kota Binjai pada tahun 2024. Di sana anak-anak dikenalkan dengan berbagai jenis buku cerita, cara meminjam buku, dan pentingnya menjaga buku. Kegiatan ini diharapkan dapat melahirkan generasi yang cinta literasi.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal8" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Mahasiswa ITB Indonesia kampus Tandem Buat Website RA</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="gambar/beritamahasiswa.jpeg" alt="Mahasiswa">
+        <p>Mahasiswa Institut Teknologi dan Bisnis (ITB) Indonesia Kampus Tandem melaksanakan pembuatan website resmi RA Aisyiyah Cengkeh Turi sebagai tugas akhir Semester 4. Website ini dikembangkan sebagai media informasi digital untuk memudahkan masyarakat, orang tua, dan calon peserta didik dalam mengakses berbagai informasi mengenai sekolah. Diharapkan website ini dapat menjadi sarana informasi yang bermanfaat serta mendukung kemajuan dan pelayanan RA Aisyiyah Cengkeh Turi di masa mendatang.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container-fluid p-0">
+    <div class="footer-inner">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-3 col-md-6">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <img src="gambar/logo.jpeg" alt="Logo RA" style="width:45px; height:45px; border-radius:12px; background:#fff; padding:6px;"> <!-- FIX -->
+            <h4 class="fw-bold mb-0" style="font-size: 1.25rem;">RA AISYIYAH</h4>
+          </div>
+          <p style="color:#d1fae5; line-height:1.6; font-size: 0.88rem; margin:0;">Lembaga Pendidikan Raudhatul Athfal (RA) Aisyiyah berbasis Islami di Jl. Perintis Kemerdekaan No. 341 Cengkeh Turi, Binjai Utara, 20747.</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3" style="font-size: 1rem; border-bottom:2px solid #22c55e; display:inline-block; padding-bottom:6px;">Menu</h5>
+          <div class="row gy-2" style="font-size: 0.88rem;">
+            <div class="col-6 d-grid gap-2">
+              <a href="index.html" class="footer-link"><i class="fa-solid fa-house me-2"></i>Beranda</a>
+              <a href="sejarah.html" class="footer-link"><i class="fa-solid fa-book me-2"></i>Sejarah</a>
+              <a href="visimisitujuan.html" class="footer-link"><i class="fa-solid fa-bullseye me-2"></i>Visi Misi</a>
+              <a href="fasilitas.html" class="footer-link"><i class="fa-solid fa-building me-2"></i>Fasilitas</a>
+            </div>
+            <div class="col-6 d-grid gap-2">
+              <a href="guru.html" class="footer-link"><i class="fa-solid fa-chalkboard-user me-2"></i>Guru</a>
+              <a href="kegiatan.html#ekskul" class="footer-link"><i class="fa-solid fa-futbol me-2"></i>Ekstrakurikuler</a>
+              <a href="kegiatan.html#lomba" class="footer-link"><i class="fa-solid fa-trophy me-2"></i>Lomba</a>
+              <a href="berita.html" class="footer-link"><i class="fa-solid fa-newspaper me-2"></i>Berita</a>
+              <a href="galeri.html" class="footer-link"><i class="fa-solid fa-image me-2"></i>Galeri</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3" style="font-size: 1rem; border-bottom:2px solid #22c55e; display:inline-block; padding-bottom:6px;">Kontak Kami</h5>
+          <div class="d-grid gap-2" style="font-size: 0.88rem;">
+            <a href="https://wa.me/6282160557348" target="_blank" class="footer-link"><i class="fa-brands fa-whatsapp me-2"></i>WhatsApp</a>
+            <a href="http://www.facebook.com/RAAISYIYAHCENGKEHTURI" target="_blank" class="footer-link"><i class="fa-brands fa-facebook me-2"></i>Facebook</a>
+            <a href="http://raaisyiyahcengkehturi.blogspot.com" target="_blank" class="footer-link"><i class="fa-brands fa-blogger me-2"></i>Blogspot</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3" style="font-size: 1rem; border-bottom:2px solid #22c55e; display:inline-block; padding-bottom:6px;">Lokasi</h5>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.932!2d98.4816!3d3.6414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3030d500019c0d01%3A0x3890616dd699b31d!2sMasjid%20Taqwa%20Muhammadiyah%20Cengkeh%20Turi!5e0!3m2!1sid!2sid!4v1720000!5m2!1sid!2sid" width="100%" height="160" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
+          <p class="mt-2" style="font-size:0.88rem; color:#d1fae5; margin:0;">Jl. Perintis Kemerdekaan No. 341, Cengkeh Turi</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">© 2026 RA AISYIYAH Cengkeh Turi, Binjai Utara. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
